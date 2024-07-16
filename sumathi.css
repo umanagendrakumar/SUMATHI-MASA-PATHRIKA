@@ -11,10 +11,10 @@ body {
 }
 
 .hero {
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 .hero .wrapper {
-  /* border: 2px solid green; */
+  border: 2px solid green;
 }
 .hero .wrapper .logo {
   border: 2px solid red;
@@ -23,6 +23,6 @@ body {
 .hero .wrapper .logo > img {
   display: block;
   width: 100%;
-  height: 20vh;
+  height: 16rem;
 }
 
