@@ -2,27 +2,105 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1.6rem;
 }
 
-.hero {
-  border: 2px solid red;
-}
-.hero .wrapper {
-  border: 2px solid green;
-}
-.hero .wrapper .logo {
-  border: 2px solid red;
-  
-}
-.hero .wrapper .logo > img {
-  display: block;
-  width: 100%;
-  height: 16rem;
+li {
+  list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.wrapper .header {
+  border: 2px solid green;
+}
+
+.wrapper .header .logo {
+  border: 2px solid red;
+}
+
+.wrapper .logo-block .logo {
+  display: block;
+  width: 100%;
+  height: 17rem;
+}
+
+.header .navbar {
+  background-color: brown;
+  padding: 1rem 3rem;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-list .navbar-li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .navbar-list .navbar-li .dropdown{
+  cursor: pointer;
+}
+
+.navbar .navbar-list .navbar-li a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.navbar .navbar-list .navbar-li .take-to-in {
+  position: absolute;
+  top: 3rem;
+  left: -20rem !important;
+}
+
+.navbar .navbar-list .navbar-li .dropdown-items {
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  text-wrap: nowrap;
+  padding: 1rem 1rem 0;
+  box-shadow: 2px 2px 5px rgb(184, 182, 182);
+  display: none;
+}
+
+.dropdown-items .dropdown-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.dropdown-items .dropdown-list .column .dropdown-li {
+  margin-bottom: 1.5rem;
+}
+
+.dropdown-items .dropdown-list .column .dropdown-li:hover {
+  background-color: rgba(198, 194, 194, 0.1);
+}
+
+.dropdown-items .dropdown-list .column .dropdown-li a {
+  color: black;
+  margin: 0.3rem;
+  font-weight: 400;
+  font-size: medium;
+}
