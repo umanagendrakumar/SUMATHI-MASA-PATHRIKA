@@ -96,10 +96,6 @@ a {
   display: none;
 }
 
-.toggling {
-  display: inline !important ;
-}
-
 .dropdown-items .dropdown-list {
   display: flex;
   align-items: center;
@@ -131,7 +127,7 @@ a {
     margin-bottom: 1rem;
   }
   .navbar .navbar-list .navbar-li .dropdown-items {
-    display: block;
+    /* display: block; */
     position: static;
     padding: 1rem;
   }
