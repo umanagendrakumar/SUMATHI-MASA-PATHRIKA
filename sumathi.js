@@ -1,3 +1,20 @@
+const menu = document.querySelector('.menu');
+const close = document.querySelector('.close');
+const navbarList = document.querySelector('.navbar-list');
+
+
+menu.addEventListener('click', () => {
+    close.style.display = "block";
+    navbarList.style.display = "block";
+    menu.style.display = "none"
+});
+
+close.addEventListener('click', () => {
+    close.style.display = "none";
+    navbarList.style.display = "none";
+    menu.style.display = "block";
+})
+
 const navbarLI2 = document.querySelector('.navbar-li2');
 const navbarLI3 = document.querySelector('.navbar-li3');
 const navbarLI4 = document.querySelector('.navbar-li4');
