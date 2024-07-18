@@ -15,6 +15,17 @@ close.addEventListener('click', () => {
     menu.style.display = "block";
 })
 
+// const wrap = document.querySelector('.wrap');
+// const dropdownItems = document.querySelector('.dropdown-items');
+
+// wrap.addEventListener('click', () => {
+//     alert('h');
+// });
+
+
+
+
+
 // const navbarLI2 = document.querySelector('.navbar-li2');
 // const navbarLI3 = document.querySelector('.navbar-li3');
 // const navbarLI4 = document.querySelector('.navbar-li4');
