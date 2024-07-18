@@ -4,7 +4,7 @@ const navbarList = document.querySelector('.navbar-list');
 
 
 menu.addEventListener('click', () => {
-    close.style.display = "block";
+    close.style.display = "inline-block";
     navbarList.style.display = "block";
     menu.style.display = "none"
 });
@@ -12,7 +12,7 @@ menu.addEventListener('click', () => {
 close.addEventListener('click', () => {
     close.style.display = "none";
     navbarList.style.display = "none";
-    menu.style.display = "block";
+    menu.style.display = "inline-block";
 })
 
 // const wrap = document.querySelector('.wrap');

@@ -40,9 +40,13 @@ img {
 .navbar .menu {
   display: none;
   cursor: pointer;
+  border: 2px solid red;
 }
 
 .navbar .close {
+  border: 2px solid white;
+  padding: 0.2rem;
+  border-radius: 50%;
   cursor: pointer;
   display: none;
   margin: 1rem 0;
@@ -118,9 +122,9 @@ img {
   gap: 5rem;
 }
 
-.dropdown-items .dropdown-list:last-child {
-  /* margin-bottom: 0 !important; */
-}
+/* .dropdown-items .dropdown-list:last-child {
+  margin-bottom: 0 !important;
+} */
 
 .dropdown-items .dropdown-list .column .dropdown-li {
   margin-block: 1rem;
@@ -146,7 +150,7 @@ img {
 
 @media screen and (max-width:1300px) {
   .navbar .menu {
-    display: block;
+    display: inline-block;
   }
 
   .navbar .navbar-list {
