@@ -36,7 +36,7 @@ img {
 .header .navbar {
   /* background-color: rgb(4, 182, 222);
    */
-  background-color: rgb(37, 115, 154);
+  background-color: brown;
   padding: 1rem 3rem;
 }
 
@@ -245,11 +245,12 @@ img {
 .head {
   /* border: 2px solid red; */
   font-size: x-large;
-  font-weight: 600;
-  color: white;
+  font-weight: 700;
+  color: black;
   font-style: oblique;
   margin-bottom: 1rem;
   text-align: center;
+  text-shadow: 3px 3px 2px rgb(255, 255, 255);
 }
 
 /* .current-magazine */
@@ -286,13 +287,12 @@ img {
 
 /* .current-magazine .image-card */
 .month {
-  font-size: xx-large;
-  font-weight: 800;
+  font-size: Xx-large;
+  font-weight: 700;
   /* display: inline-block; */
 }
 
-/* .current-magazine .image-card  */
-.download {
+.current-magazine .image-card .download {
   border: 2px solid black;
   border-top: none;
   padding: 0 3.4rem 1.3rem;
@@ -324,9 +324,45 @@ img {
 .section3 .previous-magazines .magazines {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
   /* border: 2px solid red; */
   padding: 1rem 5rem;
+}
+
+.magazines a .image-card .download {
+  border: 2px solid black;
+  border-top: none;
+  font-weight: 500;
+  padding: 0.5rem 1.8rem;
+}
+
+
+/* tv channel section */
+
+/* .main .section4 {
+  border: 2px solid red;
+} */
+
+.section4 .tv-channel {
+  /* border: 2px solid black; */
+  margin: 0 5rem;
+  padding: 2rem 1rem 1rem;
+}
+
+.tv-channel .videos-wrapper {
+  /* border: 2px solid rgb(0, 255, 42); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding: 1rem 5rem;
+}
+
+.tv-channel .videos-wrapper iframe {
+  /* border: none; */
+  border-radius: 5px;
 }
