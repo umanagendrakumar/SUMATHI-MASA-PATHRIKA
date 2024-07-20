@@ -406,9 +406,6 @@ img {
   justify-content: center;
 }
 
-.footer .footer-wrapper > * {
-  /* border: 2px solid blueviolet; */
-}
 
  .footer-wrapper .footer-info {
   border: 2px solid rgb(236, 235, 235);
@@ -444,9 +441,7 @@ img {
 
  }
 
-.footer .footer-wrapper .footer-info > * {
-  /* border: 2px solid blue; */
-}
+
 
 .footer-info .info {
   display: flex;
