@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+.wrapper {
+    padding: 2rem;
+    font-size: large;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 20px 20px 20px rgb(161, 160, 160);
+    position: relative;
+  
+}
+
+.wrapper:hover {
+    background-color: rgb(252, 252, 252);
+}
+
+/* login page css start*/
+
+.login-wrapper {
+    
+    padding: 4rem;
+}
+
+.wrapper div .not:hover {
+    text-decoration: underline;
+}
+
+.subscribed {
+    padding: 1rem;
+}
+
+.subscribed .input {
+    height: 2rem;
+    padding: 0.3rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.subscribed .button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgb(255, 255, 36), orange);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.subscribed .button:active {
+    transform: scale(0.98);
+}
+
+.wrapper div .not {
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: medium;
+    color: rgb(56, 56, 134)
+}
+
+.wrapper .red {
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+    /* display: none; */
+}
+
+
+
+/* subscribing page css */
+
+.wrapper .not-subscribed {
+    padding: 2rem;
+}
+
+span {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+h1 {    
+    margin-block-end: 2rem;
+}
+
+a {
+    color: rgb(161, 115, 30);
+    /* text-decoration: none; */
+}
+
+.wrapper .not-subscribed .one {
+    font-size: x-large;
+}
+
+.wrapper .not-subscribed:last-child .amount {
+  color: green;
+}
