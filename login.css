@@ -17,12 +17,12 @@ body {
     padding: 2rem;
     font-size: large;
     font-weight: 500;
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
     text-align: center;
     background-color: white;
     box-shadow: 20px 20px 20px rgb(161, 160, 160);
     position: relative;
-  
+
 }
 
 .wrapper:hover {
@@ -32,7 +32,6 @@ body {
 /* login page css start*/
 
 .login-wrapper {
-    
     padding: 4rem;
 }
 
@@ -41,8 +40,10 @@ body {
 }
 
 .subscribed {
-    padding: 1rem;
+    padding: 0.5rem;
 }
+
+
 
 .subscribed .input {
     height: 2rem;
@@ -94,7 +95,7 @@ span {
     font-weight: 700;
 }
 
-h1 {    
+h1 {
     margin-block-end: 2rem;
 }
 
@@ -103,10 +104,71 @@ a {
     /* text-decoration: none; */
 }
 
+p {
+    margin: 1rem 0;
+}
+
 .wrapper .not-subscribed .one {
     font-size: x-large;
 }
 
 .wrapper .not-subscribed:last-child .amount {
-  color: green;
+    color: green;
+}
+
+
+@media screen and (max-width:720px) {
+    .wrapper {
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+
+    h1 {
+        margin-block-end: 1rem;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .wrapper {
+        box-shadow: none;
+        border: 1px solid rgb(197, 194, 194);
+    }
+
+    .subscribed form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+
+    }
+
+    .subscribed .input {
+        width: 200px;
+    }
+
+    .subscribed .button {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    .login-wrapper {
+        padding: 2rem;
+    }
+
+    .wrapper .not-subscribed > div {
+        margin-bottom: 1.5rem;
+    }
+
+    .wrapper1 {
+        padding: 1rem;
+    }
+
+
 }
