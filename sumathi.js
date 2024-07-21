@@ -23,11 +23,6 @@ close.addEventListener('click', () => {
 // });
 
 
-const navbarLi = document.querySelector('.navbar-li');
-
-navbarLi.addEventListener('click', function() {
-    alert('hai')
-});
 
 
 // const navbarLI2 = document.querySelector('.navbar-li2');

@@ -35,6 +35,10 @@ body {
     padding: 4rem;
 }
 
+.login-wrapper .red {
+    display: none;
+}
+
 .wrapper div .not:hover {
     text-decoration: underline;
 }
@@ -162,7 +166,7 @@ p {
         padding: 2rem;
     }
 
-    .wrapper .not-subscribed > div {
+    .wrapper .not-subscribed>div {
         margin-bottom: 1.5rem;
     }
 
@@ -172,3 +176,56 @@ p {
 
 
 }
+
+
+
+
+
+/* WRITE TO US CSS */
+
+.write-wrapper {
+    border: 2px solid gainsboro;
+    padding: 2rem;
+    margin: 0.5rem;
+    /* text-align: center; */
+}
+
+.write-wrapper .upload {
+    /* border: 2px solid red; */
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.write-wrapper .upload h2 {
+    margin-bottom: 0.8rem;
+}
+
+.write-wrapper .email {
+    /* border: 2px solid green; */
+    padding: 1rem;
+}
+
+.write-wrapper .email h2 {
+    /* text-align: center; */
+    margin-bottom: 0.5rem;
+}
+
+.write-wrapper .email div {
+    padding: 0.2rem;
+}
+
+
+
+@media screen and (max-width:420px) {
+    .write-wrapper {
+        /* border: 2px solid gainsboro; */
+        padding: 0;
+        /* text-align: center; */
+    }
+
+    .write-wrapper .upload {
+        /* border: 2px solid red; */
+        margin-bottom: 0;
+    }
+}
+
