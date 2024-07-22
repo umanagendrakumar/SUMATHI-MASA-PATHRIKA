@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sumathi.css">
+  <link rel="stylesheet" href="navbar.css">
+
   <link rel="icon" type="image/x-icon" href="images/sumathilogo.jpg">
   <title>సుమతి</title>
 </head>
@@ -15,7 +17,128 @@
       <div class="logo-block">
         <img class="logo" src="images/logo.jpg" alt="sumathi logo">
       </div>
+
       <nav class="navbar">
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </label>
+
+        <label for="sidebar-active" class="overlay"></label>
+
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </label>
+          <ul class="navbar-links">
+            <li><a href="">Home</a></li>
+            <li>
+              <a class="dropdown" href="#">Books Published</a>
+              <ul class="hidden">
+                <li><a class="hidden-links" href="">Technology Today</a></li>
+                <li><a class="hidden-links" href="">Cutting Edge AI Tools</a></li>
+              </ul>
+            </li>
+            <li id="splitting-to-2columns">
+              <a class="dropdown" href="#">అందరి కోసం</a>
+              <ul class="hidden">
+                <li><a class="hidden-links" href="">ముఖచిత్ర కథ</a></li>
+                <li><a class="hidden-links" href="">అంతర్నేత్రం</a></li>
+                <li><a class="hidden-links" href="">వార్తల్లో వ్య్తక్తి</a></li>
+                <li><a class="hidden-links" href="">హెల్త్ టిప్స్</a></li>
+                <li><a class="hidden-links" href="">సెటైర్</a></li>
+                <li><a class="hidden-links" href="">చూడాల్సిన ప్రదేశం</a></li>
+                <li><a class="hidden-links" href="">రేపటి కోసం</a></li>
+                <li><a class="hidden-links" href="">ముఖా ముఖి</a></li>
+                <li><a class="hidden-links" href="">వినాల్సిన పాట</a></li>
+                <li><a class="hidden-links" href="">చదవాల్సిన పుస్తకం</a></li>
+                <li><a class="hidden-links" href="">చూడాల్సిన సినిమా</a></li>
+              </ul>
+              <ul class="hidden column2">
+                <li><a class="hidden-links" href="">సాహితీ శిఖరాలు</a></li>
+                <li><a class="hidden-links" href="">జీవన చిత్రాలు</a></li>
+                <li><a class="hidden-links" href="">ఈ నెల స్మరణీయులు</a></li>
+                <li><a class="hidden-links" href="">పండుగ</a></li>
+                <li><a class="hidden-links" href="">పుస్తక సమీక్ష</a></li>
+                <li><a class="hidden-links" href="">సభలు-సత్కారాలు</a></li>
+                <li><a class="hidden-links" href="">గ్రంధావిష్కరణ</a></li>
+                <li><a class="hidden-links" href="">పుస్తక పరిచయం</a></li>
+                <li><a class="hidden-links" href="">సాహితీ పద సుమతి</a></li>
+                <li><a class="hidden-links" href="">చిత్ర కథ-చిత్రకవిత</a></li>
+              </ul>
+
+            </li>
+            <li>
+              <a class="dropdown" href="#">యువత కోసం</a>
+              <ul class="hidden yuvatha">
+                <li><a class="hidden-links" href="">GPT-4 (టెక్నాలజీ)</a></li>
+                <li><a class="hidden-links" href="">ఫోటోగ్రఫి పాఠాలు (మూడో కన్ను)</a></li>
+                <li><a class="hidden-links" href="">యువతా తెలుసుకో</a></li>
+                <li><a class="hidden-links" href="">కరెంట్ అఫైర్స్</a></li>
+                <li><a class="hidden-links" href="">Python నేర్చుకోండి</a></li>
+                <li><a class="hidden-links" href="">క్రీడా ప్రపంచం</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown" href="#">మహిళల కోసం</a>
+              <ul class="hidden">
+                <li><a class="hidden-links" href="">డూడ్లింగ్</a></li>
+                <li><a class="hidden-links" href="">కొత్తగా వస్తున్నాయి</a></li>
+                <li><a class="hidden-links" href="">వంటా వార్పూ</a></li>
+                <li><a class="hidden-links" href="">ఆధ్యాత్మికం</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown" href="#">పిల్లలు కోసం</a>
+              <ul class="hidden">
+                <li><a class="hidden-links" href="">పిల్లలు కథ</a></li>
+                <li><a class="hidden-links" href="">పిల్లలు పిడుగుల</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown" href="#">కథలు, సీరియల్స్</a>
+              <ul class="hidden katha">
+                <li><a class="hidden-links" href="">తనువా ..హరి చందనమే (సరస కథ)</a></li>
+                <li><a class="hidden-links" href="">రాణా ప్రతాప్ (చరిత్రాత్మక సీరియల్)</a></li>
+                <li><a class="hidden-links" href="">గర్భ శ్లోకం (క్రైం సీరియల్)</a></li>
+                <li><a class="hidden-links" href="">కలవరమాయే మదిలో (హాస్యకథ)</a></li>
+                <li><a class="hidden-links" href="">అహింసా పరమో ధర్మః (కథ)</a></li>
+                <li><a class="hidden-links" href="">పరుగులు తీసే నీ వయసునకు(సీరియల్)</a></li>
+                <li><a class="hidden-links" href="">బామ్మ సాహసం (క్రైం కథ)</a></li>
+                <li><a class="hidden-links" href="">చెక్క గుర్రాలు (వాస్తవ కథ)</a></li>
+                <li><a class="hidden-links" href="">చరమాంకం (కథ)</a></li>
+                <li><a class="hidden-links" href="">>పర్సోపాఖ్యానం (కథ)</a></li>
+
+
+
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown" href="#">Write to us</a>
+              <ul class="hidden">
+                <li><a class="hidden-links" href="">కవితలు</a></li>
+                <li><a class="hidden-links" href="">కథలు, సీరియల్స్</a></li>
+                <li><a class="hidden-links" href="">others...</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown" href="#">Archive</a>
+              <ul class="hidden">
+                <li><a class="hidden-links" href="">March 2023 Magazine</a></li>
+                <li><a class="hidden-links" href="">April 2023 Magazine</a></li>
+              </ul>
+            </li>
+            <li><a href="">LOGIN</a></li>
+            <li><a href="">SUBSCRIBE</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <nav class="navbar">
 
         <div class="menu">
           <img src="svg/menu.svg" alt="menu-icon">
@@ -317,7 +440,7 @@
             </div>
           </li> -->
         </ul>
-      </nav>
+      </nav> -->
 
     </header>
 
@@ -610,7 +733,30 @@
 
 
   </div>
-  <script src="sumathi.js"></script>
-</body>
+  <script>
+
+    const screenWidth = window.screen.width;
+    console.log(screenWidth);
+
+    if (window.screen.width < 1336) {
+
+        const outsideLIs = document.querySelectorAll('.navbar-links > li');
+        const hidden = document.querySelector('.hidden');
+
+        // console.log(outsideLIs);
+
+        outsideLIs.forEach(item => {
+            item.addEventListener('click', (event) => {
+               
+                item.querySelector('.hidden').classList.toggle('hide-show');
+                // console.log(item.querySelector('.hidden').classList.contains('hide-show'))
+
+            });
+        });
+    }
+
+
+
+</script></body>
 
 </html>
