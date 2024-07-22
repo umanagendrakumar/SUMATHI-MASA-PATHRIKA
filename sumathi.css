@@ -33,14 +33,14 @@ img {
   height: 17rem;
 }
 
-/* .header {
-  position: relative;
-} */
+
+
 .header .navbar {
   /* background-color: rgb(4, 182, 222);
    */
   background-color: brown;
   padding: 1rem 3rem;
+
   /* position: -webkit-sticky;
   position: sticky;
   top: 0; */
