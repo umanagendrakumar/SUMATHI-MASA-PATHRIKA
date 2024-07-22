@@ -12,6 +12,8 @@
     align-items: center;
 }
 
+
+
 .links-container {
     height: 100%;
     width: 100%;
@@ -63,7 +65,7 @@
 
 
 @media screen and (min-width: 1336px) {
-    
+
     /* .navbar-links li:focus-within>.hidden, */
     .navbar-links li:hover>.hidden {
         display: initial;
@@ -132,6 +134,7 @@
 
 
 @media screen and (max-width: 1335px) {
+
     .links-container {
         flex-direction: column;
 
@@ -171,7 +174,12 @@
     }
 
 
-    .open-sidebar-button,
+    .open-sidebar-button {
+        display: block;
+        /* padding: 0 25px; */
+
+    }
+
     .close-sidebar-button {
         display: block;
         padding: 0 25px;
