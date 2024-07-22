@@ -1,19 +1,19 @@
-const menu = document.querySelector('.menu');
-const close = document.querySelector('.close');
-const navbarList = document.querySelector('.navbar-list');
+// const menu = document.querySelector('.menu');
+// const close = document.querySelector('.close');
+// const navbarList = document.querySelector('.navbar-list');
 
 
-menu.addEventListener('click', () => {
-    close.style.display = "inline-block";
-    navbarList.style.display = "block";
-    menu.style.display = "none"
-});
+// menu.addEventListener('click', () => {
+//     close.style.display = "inline-block";
+//     navbarList.style.display = "block";
+//     menu.style.display = "none"
+// });
 
-close.addEventListener('click', () => {
-    close.style.display = "none";
-    navbarList.style.display = "none";
-    menu.style.display = "inline-block";
-})
+// close.addEventListener('click', () => {
+//     close.style.display = "none";
+//     navbarList.style.display = "none";
+//     menu.style.display = "inline-block";
+// })
 
 // const wrap = document.querySelector('.wrap');
 // const dropdownItems = document.querySelector('.dropdown-items');

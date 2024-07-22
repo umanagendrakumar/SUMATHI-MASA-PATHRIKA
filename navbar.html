@@ -36,7 +36,7 @@
                         <li><a class="hidden-links" href="">Cutting Edge AI Tools</a></li>
                     </ul>
                 </li>
-                <li>
+                <li id="splitting-to-2columns">
                     <a class="dropdown" href="#">అందరి కోసం</a>
                     <ul class="hidden">
                         <li><a class="hidden-links" href="">ముఖచిత్ర కథ</a></li>
@@ -50,6 +50,8 @@
                         <li><a class="hidden-links" href="">వినాల్సిన పాట</a></li>
                         <li><a class="hidden-links" href="">చదవాల్సిన పుస్తకం</a></li>
                         <li><a class="hidden-links" href="">చూడాల్సిన సినిమా</a></li>
+                    </ul>
+                    <ul class="hidden column2">
                         <li><a class="hidden-links" href="">సాహితీ శిఖరాలు</a></li>
                         <li><a class="hidden-links" href="">జీవన చిత్రాలు</a></li>
                         <li><a class="hidden-links" href="">ఈ నెల స్మరణీయులు</a></li>
@@ -65,7 +67,7 @@
                 </li>
                 <li>
                     <a class="dropdown" href="#">యువత కోసం</a>
-                    <ul class="hidden">
+                    <ul class="hidden yuvatha">
                         <li><a class="hidden-links" href="">GPT-4 (టెక్నాలజీ)</a></li>
                         <li><a class="hidden-links" href="">ఫోటోగ్రఫి పాఠాలు (మూడో కన్ను)</a></li>
                         <li><a class="hidden-links" href="">యువతా తెలుసుకో</a></li>
@@ -92,7 +94,7 @@
                 </li>
                 <li>
                     <a class="dropdown" href="#">కథలు, సీరియల్స్</a>
-                    <ul class="hidden">
+                    <ul class="hidden katha">
                         <li><a class="hidden-links" href="">తనువా ..హరి చందనమే (సరస కథ)</a></li>
                         <li><a class="hidden-links" href="">రాణా ప్రతాప్ (చరిత్రాత్మక సీరియల్)</a></li>
                         <li><a class="hidden-links" href="">గర్భ శ్లోకం (క్రైం సీరియల్)</a></li>
@@ -128,6 +130,32 @@
             </ul>
         </div>
     </nav>
+
+    <script>
+
+        const screenWidth = window.screen.width;
+        console.log(screenWidth);
+
+        if (window.screen.width < 1336) {
+
+            const outsideLIs = document.querySelectorAll('.navbar-links > li');
+            const hidden = document.querySelector('.hidden');
+
+            // console.log(outsideLIs);
+
+            outsideLIs.forEach(item => {
+                item.addEventListener('click', (event) => {
+                   
+                    item.querySelector('.hidden').classList.toggle('hide-show');
+                    // console.log(item.querySelector('.hidden').classList.contains('hide-show'))
+
+                });
+            });
+        }
+
+
+
+    </script>
 
 </body>
 
