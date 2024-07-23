@@ -303,7 +303,8 @@ img {
 .current-magazine .image-card .download {
   border: 2px solid black;
   border-top: none;
-  padding: 0 3.4rem 0.5rem;
+  /* padding: 0 3.4rem 0.5rem; */
+  width: 100%;
   font-size: large;
   font-weight: 500;
   color: green;

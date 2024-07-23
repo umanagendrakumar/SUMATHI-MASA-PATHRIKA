@@ -1,24 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
     <title>సుమతి</title>
+
+    <style>
+        /* WRITE TO US CSS */
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100dvh;
+            background-color: aliceblue;
+        }
+
+        .write-wrapper {
+            border: 2px solid gainsboro;
+            padding: 2rem;
+            margin: 0.5rem;
+            /* text-align: center; */
+        }
+
+        .write-wrapper .upload {
+            /* border: 2px solid red; */
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+
+
+        .write-wrapper .upload h2 {
+            margin-bottom: 0.8rem;
+        }
+
+        .upload form {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .write-wrapper .email {
+            /* border: 2px solid green; */
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        button {
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .write-wrapper .email h2 {
+            /* text-align: center; */
+            margin-bottom: 0.5rem;
+        }
+
+        .write-wrapper .email div {
+            padding: 0.2rem;
+        }
+
+
+
+        @media screen and (max-width:420px) {
+            .write-wrapper {
+                /* border: 2px solid gainsboro; */
+                padding: 0;
+                /* text-align: center; */
+            }
+
+            .write-wrapper .upload {
+                /* border: 2px solid red; */
+                margin-bottom: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="write-wrapper">
         <div class="upload">
             <h2>Upload your Files</h2>
-            <input type="file">
+            <form action="mailto:sumathi.kathalu@gmail.com">
+                <input type="file" required>
+                <button>submit</button>
+            </form>
         </div>
         <div class="email">
             <h2>Email Us at :</h2>
-            <div>sumathi.kathalu@gmail.com</div>
-            <div>sumathi.kavithalu@gmail.com</div>
-            <div>sumathi.cartoons@gmail.com</div>
+
+            <form action="mailto:sumathi.kathalu@gmail.com">
+                <button>
+                    sumathi.kathalu@gmail.com
+                </button>
+            </form>
+
+            <form action="mailto:sumathi.kavithalu@gmail.com">
+                <button>
+                    sumathi.kavithalu@gmail.com
+                </button>
+            </form>
+
+            <form action="mailto:sumathi.cartoons@gmail.com">
+                <button>
+                    sumathi.cartoons@gmail.com
+                </button>
+            </form>
         </div>
     </div>
-    
+
 </body>
+
 </html>
