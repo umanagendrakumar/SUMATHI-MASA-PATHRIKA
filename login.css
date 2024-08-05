@@ -35,9 +35,6 @@ body {
     padding: 4rem;
 }
 
-.login-wrapper .red {
-    display: none;
-}
 
 .wrapper div .not:hover {
     text-decoration: underline;
@@ -83,7 +80,6 @@ body {
     color: red;
     font-weight: bolder;
     font-size: large;
-    /* display: none; */
 }
 
 
