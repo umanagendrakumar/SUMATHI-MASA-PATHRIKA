@@ -30,7 +30,7 @@
     }
 
     ?>
-    <div class="wrapper login-wrapper">
+    <!-- <div class="wrapper login-wrapper">
         <div class="subscribed">
             <h1><a href="index.html">SUMATHI MASA PATHRIKA</a></h1>
             <p>Enter the subscription code of current month</p>
@@ -38,39 +38,39 @@
                 <input class="input" id="focus" name="code" type="password" placeholder="Enter code...." required>
                 <button type="submit" class="button" name="login_user">S U B M I T</button>
             </form>
-        </div>
+        </div> -->
 
-        <?php
-        if (isset($_POST["login_user"])) {
-            $code_entered = $_POST["code"]; //gives user entered code in login page
+    <?php
+    if (isset($_POST["login_user"])) {
+        $code_entered = $_POST["code"]; //gives user entered code in login page
 
-            $codeFromDB = "SELECT code FROM logincode";
+        $codeFromDB = "SELECT code FROM logincode";
 
-            $result = mysqli_query($conn, $codeFromDB);
+        $result = mysqli_query($conn, $codeFromDB);
 
-            $codeArray = mysqli_fetch_array($result, MYSQLI_ASSOC);  //convert object into array //Array ( [code] => codevalue)
+        $codeArray = mysqli_fetch_array($result, MYSQLI_ASSOC);  //convert object into array //Array ( [code] => codevalue)
 
-            $dbCodeVal = $codeArray['code'];
+        $dbCodeVal = $codeArray['code'];
 
-            $errors = array();
-            if ($code_entered !== $dbCodeVal) {
-                array_push($errors, "**invalid code");
-            }
-
-            if (count($errors) > 0) {
-                foreach ($errors as $error) {
-                    echo "<div class='red'>$error</div>";
-                }
-            } else {
-                header('Location: sumathi.html');
-                die();
-            }
+        $errors = array();
+        if ($code_entered !== $dbCodeVal) {
+            array_push($errors, "**invalid code");
         }
 
-        ?>
+        if (count($errors) > 0) {
+            foreach ($errors as $error) {
+                echo "<div class='red'>$error</div>";
+            }
+        } else {
+            header('Location: sumathi.html');
+            die();
+        }
+    }
 
-        <div><a class="not" href="subscribe.html">not yet subscribed</a></div>
-    </div>
+    ?>
+
+    <!-- <div><a class="not" href="subscribe.html">not yet subscribed</a></div>
+    </div> -->
 
 
 
